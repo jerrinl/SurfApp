@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">SurfApp</string>
+    <string name="locationText">Location</string>
+    <string name="surf">0 to 1 feet</string>
+    <string name="testString">test</string>
+    <string-array name="location_array">
+        <item>north</item>
+        <item>south</item>
+        <item>east</item>
+        <item>west</item>
+    </string-array>
+</resources>

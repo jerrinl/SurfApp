@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="fill_parent"
+              android:layout_height="wrap_content"
+              android:background="@drawable/surf" android:gravity="top" android:weightSum="1"
+              android:id="@+id/background" android:orientation="horizontal">
+    <TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                 android:id="@+id/ButtonsTable"
+                 android:layout_width="fill_parent"
+                 android:layout_height="wrap_content"
+                 android:orientation="horizontal"
+                 android:stretchColumns="0,1">
+        <TableRow>
+            <ImageView
+                    android:layout_weight="1"
+                    android:layout_width="0px"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/down_button_min" android:src="@drawable/down" android:layout_gravity="center_vertical"
+            />
+            <ImageView
+                    android:layout_weight="1"
+                    android:layout_width="0px"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/up_button_min" android:src="@drawable/up" android:layout_gravity="center_vertical"/>
+            <TextView
+                    android:layout_weight="3"
+                    android:layout_width="0px"
+                    android:layout_height="wrap_content"
+                    android:text="@string/surf"
+                    android:id="@+id/surfRange"
+                    android:textSize="30sp" android:textColor="#003000" android:layout_gravity="left|center_vertical"/>
+            <ImageView
+                    android:layout_weight="1"
+                    android:layout_width="0px"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/down_button_max" android:src="@drawable/down" android:layout_gravity="center_vertical"/>
+            <ImageView
+                    android:layout_weight="1"
+                    android:layout_width="0px"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/up_button_max" android:src="@drawable/up" android:layout_gravity="center_vertical"/>
+        </TableRow>
+        <TableRow>
+            <TextView
+                    android:layout_weight="3"
+                    android:layout_width="0px"
+                    android:layout_height="wrap_content"
+                    android:text="@string/locationText"
+                    android:id="@+id/location"
+                    android:textSize="30sp" android:textColor="#003000" android:layout_gravity="center_vertical"/>
+            <Spinner
+                    android:layout_weight="3"
+                    android:id="@+id/location_spinner"
+                    android:layout_width="0px"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"/>
+            <ImageView
+                    android:layout_weight="1"
+                    android:layout_width="0px"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/submit_button" android:layout_gravity="center_vertical"
+                    android:src="@drawable/submit"/>
+        </TableRow>
+        <TableRow>
+            <TextView
+                    android:layout_weight="1"
+                    android:layout_width="0px"
+                    android:layout_height="wrap_content"
+                    android:text="@string/testString"
+                    android:id="@+id/test"
+                    android:textSize="30sp" android:textColor="#003000" android:layout_gravity="center_vertical"/>
+        </TableRow>
+    </TableLayout>
+</LinearLayout>
+
